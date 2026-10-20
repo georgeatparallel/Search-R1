@@ -14,7 +14,7 @@ import torch
 import yaml
 
 from search_r1.llm_agent.generation import GenerationConfig, LLMGenerationManager
-from search_r1.search import parallel_search
+from search_r1.llm_agent import parallel_search
 from verl import DataProto
 
 

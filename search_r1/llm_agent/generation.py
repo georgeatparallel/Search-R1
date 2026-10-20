@@ -459,7 +459,7 @@ If I want to give the final answer, I should put the answer between <answer> and
             search results which is concatenated into a string
         """
         if self.config.search_url == 'parallel':
-            from search_r1.search.parallel_search import batch_search
+            from .parallel_search import batch_search
             results = batch_search(queries, session_ids or [], self.config.topk)['result']
         else:
             results = self._batch_search(queries)['result']
